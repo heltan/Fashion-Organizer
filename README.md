@@ -1,5 +1,5 @@
 # Fashion-Organizer
-A closet app to save and sort clothes by brand and type! A WIP, but working.
+A one-page React closet app to save and sort clothes by brand and type! A WIP, but working. Uses MongoDB to run CRUD operations on records.
 
 To start, fork and clone down the repo. Run 'npm install', run 'npm run build' and lastly run 'npm start'. Open the /public/index.html file in the browser.
 
