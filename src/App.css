@@ -1,0 +1,28 @@
+#root {
+  padding-top: 20px;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+html {
+  background-color: white;
+
+}
+#addNew {
+  margin: auto;
+  background-color: blanchedalmond;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30%;
+  border-radius: 25px;
+}
+#closet {
+  margin: auto;
+  background-color:burlywood;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 50%;
+
+  border-radius: 25px;
+}
