@@ -10,13 +10,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
     }
   }
   //save input from form into the state on submit
   saveFormInfo (form) {
-    console.log('form', form);
-
   }
   render() {
     return (
@@ -28,12 +25,8 @@ class App extends Component {
 <div id='closet'>
 <Closet/>
 </div>
-
-{/* did not have time to implement adding/creating outfits */}
 {/* <Outfits/> */}
 </div>
-
-
 
     )
   }
