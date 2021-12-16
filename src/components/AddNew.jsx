@@ -40,14 +40,11 @@ class AddNew extends React.Component {
     let postData = this.state;
     //we want to make a post request to save this info into our db
     let url = 'http://localhost:3001/save'
-    console.log('data we are posting with axios', postData)
     axios({
       method: 'post',
       url: url,
       data: postData,
 
-    }).then(response => {
-      console.log('response from axios', response)
     })
   }
   render (){
