@@ -17,16 +17,16 @@ class App extends Component {
   }
   render() {
     return (
-<div>
-<h1>Closet Organizer</h1>
-<div id='addNew'>
-<AddNew/>
-</div>
-<div id='closet'>
-<Closet/>
-</div>
-{/* <Outfits/> */}
-</div>
+      <div>
+        <h1>Closet Organizer</h1>
+        <div id='addNew'>
+          <AddNew/>
+        </div>
+        <div id='closet'>
+          <Closet/>
+        </div>
+      {/* <Outfits/> */}
+      </div>
 
     )
   }

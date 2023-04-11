@@ -32,7 +32,7 @@ class AddNew extends React.Component {
         description: text
       })
     }
-    //now we want to update our closet
+
   }
   //handles submission of form and will save this to our db
   submitForm (form) {

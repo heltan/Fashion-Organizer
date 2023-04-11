@@ -38,7 +38,6 @@ class Closet extends React.Component {
   //this function handles the brandForm onsubmit
   brandFormOnSubmit(e) {
     e.preventDefault();
-    console.log('brand form on submit');
     //when we submit, we want to view only the brands we selected
     let checkedBrands = this.state.currentChecks;
     //remove all the keys that point to false
@@ -58,7 +57,6 @@ class Closet extends React.Component {
       let brandsResult = response.data;
       //now we will put this into our this.state.clothing to show
       //need to run display after setstate updates
-      console.log('brands result clost', brandsResult)
       this.setState({clothingInfo: brandsResult});
       this.displayClothing('brand');
     })
@@ -111,7 +109,6 @@ class Closet extends React.Component {
   }
   //handles deleting the record
   removeItem (item) {
-    console.log('removing item', item);
     //then make post request to the server delete endpoint with axios
     let url = 'http://localhost:3001/remove';
     axios({
@@ -130,7 +127,6 @@ class Closet extends React.Component {
   //this function handles getting certain clothing records and displaying
   displayClothing (display) {
     if (display === 'brand') {
-      console.log('brand')
       this.setState({currentView: 'brand'});
       //now make get the brands info from setstate
       let brands = this.state.clothingInfo;
@@ -165,7 +161,6 @@ class Closet extends React.Component {
         <div className ="btn-group">
           <button onClick = {() => {this.displayClothing('all')}} >View All</button>
           <button onClick = {this.showBrandSelection}>View By Brand</button>
-          {/* did not have time to implement view by type */}
           {/* <button>View By Type</button> */}
         </div>
         <div id='brandsSelection'>
@@ -174,8 +169,6 @@ class Closet extends React.Component {
         <div id='closetView'>
           {this.state.clothing}
         </div>
-
-
       </div>
     );
   }
